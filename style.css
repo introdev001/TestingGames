@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: white;
+}
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+}
+.game {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  gap: 20px;
+}
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 200px;
+  gap: 5px;
+}
+.cell {
+  width: 60px;
+  height: 60px;
+  background-color: #222;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  transition: all 0.2s;
+}
+.reset {
+  width: 200px;
+  height: 60px;
+  background-color: #222;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: all 0.2s;
+}
+.reset:hover {
+  border: 2px solid blue;
+  box-shadow: 0 0 10px blue;
+  border-radius: 50px;
+}
+.cell:hover {
+  background-color: #333;
+  border-radius: 50%;
+  border: 2px solid blue;
+  box-shadow: 0 0 10px blue;
+}
